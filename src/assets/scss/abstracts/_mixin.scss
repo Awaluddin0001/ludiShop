@@ -1,0 +1,12 @@
+@mixin flexBox-alignStart($direction) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: flex-start;
+}
+
+@mixin fontFamily-serif() {
+  font-family: "PT Serif", serif;
+}
+@mixin fontFamily-sansserif() {
+  font-family: "PT Serif", serif;
+}

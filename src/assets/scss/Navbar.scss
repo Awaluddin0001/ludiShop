@@ -1,0 +1,40 @@
+@use "./abstracts" as v;
+
+.navbarItem {
+  &-container {
+    position: fixed;
+    background-color: #f2453f;
+    padding: v.$font-n12;
+    border-radius: 10px;
+    top: 10px;
+    right: 20px;
+
+    width: 50rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-link {
+    font-size: v.$font-n14;
+  }
+  &-icons {
+    @include v.flexBox-alignStart(row);
+    align-items: center;
+    justify-content: space-evenly;
+    gap: v.$font-n20;
+
+    svg {
+      width: v.$font-l24;
+      height: v.$font-l24;
+
+      &:last-child {
+        background-color: v.$color-white;
+        border-radius: 50%;
+        padding: v.$font-s8;
+        width: v.$font-l32;
+        height: v.$font-l32;
+      }
+    }
+  }
+}

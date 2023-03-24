@@ -1,0 +1,21 @@
+@use "./abstracts" as v;
+
+.section {
+  &-Category {
+    margin-top: v.$font-l40;
+    .container12 {
+      @include v.flexBox-alignStart(row);
+      justify-content: space-between;
+      gap: v.$font-l40;
+    }
+    &_list {
+      li {
+        list-style-type: none;
+        text-decoration: none;
+        text-align: left;
+        font-size: v.$font-l36;
+        font-weight: 600;
+      }
+    }
+  }
+}

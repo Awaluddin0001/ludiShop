@@ -1,0 +1,95 @@
+@use "../src/assets/scss/abstracts" as v;
+
+#root {
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include v.fontFamily-serif();
+}
+
+.container {
+  &12 {
+    max-width: 1280px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.flexBox {
+  &-column {
+    &_justSpaceBetweenAlignStart {
+      @include v.flexBox-alignStart(column);
+      justify-content: space-between;
+    }
+    &_normalGap20 {
+      @include v.flexBox-alignStart(column);
+      gap: 1.6rem;
+      justify-content: flex-start;
+    }
+  }
+}
+
+.titleSection {
+  &-size1 {
+    font-size: v.$font-l48;
+    font-weight: 900;
+  }
+  &-size2 {
+    font-size: v.$font-l38;
+    font-weight: 900;
+    text-align: left;
+  }
+  &-size3 {
+    font-size: v.$font-l24;
+    font-weight: 500;
+    transform: rotate(-90deg) translateX(-45px);
+  }
+}
+
+.wordStyle {
+  &-subtitle {
+    &_reguler1 {
+      font-size: v.$font-n16;
+      font-weight: 500;
+    }
+  }
+}
+
+.ludiShop {
+  &-button {
+    &_hero {
+      @include v.flexBox-alignStart(row);
+      gap: v.$font-n20;
+    }
+    &_shop {
+      background-color: v.$color-white;
+      padding: v.$font-n20;
+      border-radius: 50%;
+    }
+    &_icon1 {
+      display: inline-block;
+      width: v.$font-l38;
+      height: v.$font-l38;
+      fill: v.$color-black;
+    }
+  }
+}
+
+.margin {
+  &-cornerlt {
+    &_20 {
+      margin-top: v.$font-n20;
+      margin-left: v.$font-n20;
+    }
+  }
+}

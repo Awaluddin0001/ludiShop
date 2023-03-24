@@ -1,0 +1,25 @@
+@use "./abstracts" as v;
+
+.section {
+  &-promo {
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+    &_vouchers {
+      @include v.flexBox-alignStart(row);
+      gap: v.$font-n20;
+      justify-content: space-between;
+    }
+    &_voucher {
+      @include v.flexBox-alignStart(column);
+      gap: v.$font-n20;
+      img {
+        object-fit: cover;
+      }
+    }
+
+    .flexBox-column_justSpaceBetweenAlignStart {
+      height: 90%;
+    }
+  }
+}
