@@ -5,7 +5,7 @@ import sprite from "../../assets/svg/heroIcon.svg";
 
 function Hero() {
   return (
-    <section className="section-hero">
+    <header className="section-hero">
       <video className="videoFootage" autoPlay muted loop>
         <source src={footageShop} type="video/mp4" />
       </video>
@@ -34,7 +34,7 @@ function Hero() {
           </div>
         </div>
       </div>
-    </section>
+    </header>
   );
 }
 

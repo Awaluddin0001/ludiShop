@@ -1,0 +1,38 @@
+@use "./abstracts" as v;
+.card {
+  &-Item {
+    background-color: v.$color-darkCharcoal;
+    border-radius: 10px;
+
+    @include v.flexBox-alignStart(column);
+  }
+  &-Images {
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    position: relative;
+    .loveItem {
+      height: 100%;
+      position: absolute;
+      bottom: -85%;
+      right: -60%;
+      z-index: 2;
+    }
+  }
+  &-Description {
+    @include v.flexBox-alignStart(column);
+    overflow: hidden;
+    padding: v.$font-n12;
+    gap: v.$font-n14;
+    font-size: v.$font-n20;
+    border-radius: 0 0 10px 10px;
+
+    h6 {
+      @include v.fontFamily-sansserif();
+      font-size: v.$font-n20;
+    }
+
+    &_price {
+      font-size: v.$font-l24;
+    }
+  }
+}

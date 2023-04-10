@@ -3,7 +3,8 @@
 .navbarItem {
   &-container {
     position: fixed;
-    background-color: #f2453f;
+    z-index: 99;
+    background-color: v.$color-darkCharcoal;
     padding: v.$font-n12;
     border-radius: 10px;
     top: 10px;
@@ -17,6 +18,7 @@
   }
   &-link {
     font-size: v.$font-n14;
+    color: v.$color-primary;
   }
   &-icons {
     @include v.flexBox-alignStart(row);
@@ -27,9 +29,11 @@
     svg {
       width: v.$font-l24;
       height: v.$font-l24;
+      filter: v.$color-primaryFilter;
 
       &:last-child {
-        background-color: v.$color-white;
+        filter: v.$color-primaryFilter;
+        background-color: v.$color-primary;
         border-radius: 50%;
         padding: v.$font-s8;
         width: v.$font-l32;

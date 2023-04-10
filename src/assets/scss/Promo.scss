@@ -9,13 +9,15 @@
       @include v.flexBox-alignStart(row);
       gap: v.$font-n20;
       justify-content: space-between;
+      img {
+        object-fit: cover;
+        width: 100%;
+      }
     }
     &_voucher {
       @include v.flexBox-alignStart(column);
-      gap: v.$font-n20;
-      img {
-        object-fit: cover;
-      }
+      width: 100%;
+      gap: 3.5rem;
     }
 
     .flexBox-column_justSpaceBetweenAlignStart {

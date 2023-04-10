@@ -1,12 +1,13 @@
 @use "./abstracts" as v;
 .section {
-  &-Suggest {
+  &-Review {
+    margin-bottom: v.$font-l48;
     .titleSection-size2 {
       margin-top: v.$font-n20;
     }
     &_cards {
       @include v.flexBox-alignStart(row);
-      gap: v.$font-n20;
+      gap: v.$font-l32;
       text-align: left;
       align-items: center;
       margin-top: v.$font-n20;

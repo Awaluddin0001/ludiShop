@@ -18,7 +18,7 @@ h6 {
 
 .container {
   &12 {
-    max-width: 1280px;
+    width: calc(100vw - 60px);
     height: auto;
     margin: 0 auto;
     text-align: center;
@@ -72,7 +72,7 @@ h6 {
       gap: v.$font-n20;
     }
     &_shop {
-      background-color: v.$color-white;
+      background-color: v.$color-primary;
       padding: v.$font-n20;
       border-radius: 50%;
     }
@@ -80,7 +80,8 @@ h6 {
       display: inline-block;
       width: v.$font-l38;
       height: v.$font-l38;
-      fill: v.$color-black;
+      // fill: v.$color-black;
+      filter: v.$color-whiteFilter;
     }
   }
 }

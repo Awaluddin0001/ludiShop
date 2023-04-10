@@ -1,0 +1,53 @@
+@use "./abstracts" as v;
+.section {
+  &-footer {
+    margin-top: v.$font-n20;
+    background-color: v.$color-darkCharcoal;
+    padding: v.$font-n20;
+    text-align: left;
+
+    &_titles {
+      p {
+        margin-top: v.$font-n20;
+        font-size: v.$font-n12;
+      }
+    }
+
+    &_links {
+      @include v.flexBox-alignStart(row);
+      justify-content: space-between;
+    }
+
+    &_profile {
+      h4 {
+        font-size: v.$font-l24;
+      }
+      li {
+        list-style-type: none;
+        font-size: v.$font-n18;
+        margin-top: v.$font-s10;
+      }
+    }
+
+    &_link {
+      @include v.flexBox-alignStart(column);
+      justify-content: space-between;
+    }
+
+    &_socmed {
+      ul {
+        @include v.flexBox-alignStart(row);
+        align-items: flex-end;
+        justify-content: flex-end;
+        gap: v.$font-n12;
+      }
+
+      li {
+        list-style-type: none;
+        svg {
+          width: v.$font-l36;
+        }
+      }
+    }
+  }
+}

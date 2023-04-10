@@ -33,3 +33,11 @@
 .logoHero {
   height: 3%;
 }
+
+.ludiShop {
+  &-button {
+    &_icon1 {
+      filter: v.$color-whiteFilter;
+    }
+  }
+}

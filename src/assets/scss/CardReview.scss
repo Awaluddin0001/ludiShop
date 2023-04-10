@@ -1,0 +1,39 @@
+@use "./abstracts" as v;
+
+.card {
+  &-Review {
+    border-radius: 10px;
+    background-color: v.$color-darkCharcoal;
+    padding: v.$font-n14;
+    width: 27rem;
+    text-align: justify;
+
+    .comment {
+      font-size: v.$font-n16;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    &_profile {
+      width: 100%;
+      @include v.flexBox-alignStart(row);
+      align-items: center;
+      gap: 20px;
+
+      img {
+        border-radius: 50%;
+        width: v.$font-l40;
+      }
+    }
+    &_identity {
+      @include v.flexBox-alignStart(column);
+      justify-content: space-between;
+      strong,
+      p {
+        font-size: v.$font-n14;
+      }
+    }
+
+    @include v.flexBox-alignStart(column);
+  }
+}
